@@ -1,4 +1,4 @@
-brett-kline
+Brett Kline
 ===========
 
 Resume website
