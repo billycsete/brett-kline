@@ -1,0 +1,22 @@
+// =================================================
+//
+// Skills
+//
+// =================================================
+
+.skills {
+
+	.two-column {
+		@include outer-container;
+
+		.bullets {
+			@include media($small) {
+				@include span-columns(6);
+			}
+
+			&:first-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

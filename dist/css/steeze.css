@@ -381,7 +381,7 @@ h1 {
   margin: 0 0 0.5rem 0; }
   h1 span {
     color: #ffffff;
-    background-color: #0c71ea;
+    background-color: #2cafb7;
     display: inline-block;
     padding: 12px 25px; }
 
@@ -392,13 +392,13 @@ h2 {
   display: inline-block; }
   h2 span {
     color: #ffffff;
-    background-color: #0c71ea;
+    background-color: #2cafb7;
     display: inline-block;
     padding: 6px 25px; }
     h2 span.red {
-      background-color: #d23e2e; }
+      background-color: #f36229; }
     h2 span.green {
-      background-color: #169e5d; }
+      background-color: #9bc03c; }
 
 h3 {
   font-weight: 700;
@@ -426,12 +426,12 @@ ol, ul {
   list-style-type: none; }
   ol li.stroke-below, ul li.stroke-below {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 0.875rem;
-    margin-bottom: 0.875rem; }
+    padding-bottom: 1rem;
+    margin-bottom: 1rem; }
   ol li.stroke-above, ul li.stroke-above {
     border-top: 1px solid #ccc;
-    padding-top: 0.875rem;
-    margin-top: 0.875rem; }
+    padding-top: 1rem;
+    margin-top: 1rem; }
 
 ul.bullets {
   list-style-type: disc;
@@ -632,6 +632,31 @@ figure.fluid {
 .work ul {
   margin-bottom: 4rem; }
   .work ul.job-title {
+    margin-bottom: 0;
+    line-height: 1.6rem; }
+.work .workplace {
+  background: #f0f2ed;
+  border-left: 4px solid #9bc03c;
+  padding: 15px 0 10px 20px;
+  margin-bottom: 1rem; }
+
+.skills .two-column {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto; }
+  .skills .two-column:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 480px) {
+    .skills .two-column .bullets {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .skills .two-column .bullets:last-child {
+        margin-right: 0; } }
+  .skills .two-column .bullets:first-of-type {
     margin-bottom: 0; }
 
 /*# sourceMappingURL=steeze.css.map */
