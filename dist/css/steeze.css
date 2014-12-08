@@ -630,7 +630,7 @@ figure.fluid {
   max-width: 1000px; }
 
 .work ul {
-  margin-bottom: 4rem; }
+  margin-bottom: 3.125rem; }
   .work ul.job-title {
     margin-bottom: 0;
     line-height: 1.6rem; }
@@ -638,7 +638,7 @@ figure.fluid {
   background: #f0f2ed;
   border-left: 4px solid #9bc03c;
   padding: 15px 0 10px 20px;
-  margin-bottom: 1rem; }
+  margin-bottom: 2.5rem; }
 
 .skills .two-column {
   max-width: 50em;
