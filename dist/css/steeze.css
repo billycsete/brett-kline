@@ -4,11 +4,10 @@
  * http://williamcsete.com
  *
  */
-html {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -557,10 +556,10 @@ figure.fluid {
   z-index: 100;
   background-color: #515761;
   color: #ffffff; }
-  .sidebar::after {
-    clear: both;
+  .sidebar:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   .sidebar a {
     color: #ffffff;
     text-decoration: none; }
@@ -579,10 +578,10 @@ figure.fluid {
   position: relative;
   z-index: 1;
   overflow: hidden; }
-  .sidebar-profile::after {
-    clear: both;
+  .sidebar-profile:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   .sidebar-profile .sidebar-details {
     padding: 15px 0 15px 25px;
     background: #515761; }
@@ -644,17 +643,19 @@ figure.fluid {
 .skills .two-column {
   max-width: 50em;
   margin-left: auto;
-  margin-right: auto; }
-  .skills .two-column::after {
-    clear: both;
+  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0; }
+  .skills .two-column:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   @media screen and (min-width: 480px) {
     .skills .two-column .bullets {
       float: left;
       display: block;
-      margin-right: 7.42297%;
-      width: 153.71149%; }
+      margin-right: 2.35765%;
+      width: 48.82117%; }
       .skills .two-column .bullets:last-child {
         margin-right: 0; } }
   .skills .two-column .bullets:first-of-type {
