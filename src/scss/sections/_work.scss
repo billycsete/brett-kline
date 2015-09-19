@@ -7,7 +7,7 @@
 .work {
 
 	ul {
-		margin-bottom: rem(50px);
+		margin-bottom: 3.5rem;
 		&.job-title {
 			margin-bottom: 0;
 			line-height: 1.6rem;
@@ -18,6 +18,6 @@
 		background: #fdfffa;
 		border-left: 4px solid $green;
 		padding: 15px 0 10px 20px;
-		margin-bottom: rem(40px);
+		margin-bottom: 3rem;
 	}
 }

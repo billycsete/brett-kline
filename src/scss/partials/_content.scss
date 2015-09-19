@@ -5,15 +5,37 @@
 // =================================================
 
 .content {
-	@include media($medium) {
+	@include media(medium) {
 		padding-left: 240px;
 	}
 
-	@include media($large) {
+	@include media(large) {
 		padding-left: 300px;
 	}
 }
 
 .max-width {
 	max-width: 1000px;
+}
+
+
+// ====================================
+// Two Column
+// ====================================
+
+.two-column {
+	@include selfclear;
+
+	.column {
+		margin-bottom: 0;
+
+		@include media(large) {
+			width: 45%;
+			float: left;
+
+			&:last-child {
+				float: right;
+			}
+		}
+	}
 }
