@@ -6,19 +6,10 @@
 
 .skills {
 
-	.two-column {
-		@include outer-container;
-		margin-left: 0;
-		margin-right: 0;
-
-		.bullets {
-			@include media($small) {
-				@include span-columns(6);
-			}
-
-			&:first-of-type {
-				margin-bottom: 0;
-			}
+	.bullets {
+		&:first-of-type {
+			margin-bottom: 0;
 		}
 	}
+
 }

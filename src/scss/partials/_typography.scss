@@ -24,7 +24,7 @@ html, body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 
-	@include media($large) {
+	@include media(large) {
 		font-size: 18px;
 	}
 }
@@ -109,13 +109,13 @@ ol, ul {
 
 	li.stroke-below {
 		border-bottom: 1px solid #ccc;
-		padding-bottom: rem(16px);
-		margin-bottom: rem(16px);
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
 	li.stroke-above {
 		border-top: 1px solid #ccc;
-		padding-top: rem(16px);
-		margin-top: rem(16px);
+		padding-top: 1rem;
+		margin-top: 1rem;
 	}
 }
 
