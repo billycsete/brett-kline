@@ -691,6 +691,8 @@ figure.fluid img {
   clear: both;
 }
 .sidebar-profile .sidebar-details {
+  position: relative;
+  z-index: 10;
   padding: 15px 0 15px 25px;
   background: #515761;
 }
@@ -701,11 +703,10 @@ figure.fluid img {
   margin-bottom: 0;
   line-height: 1.8rem;
 }
+.sidebar-profile .sidebar-profile-img {
+  margin: -4% 0 -3% 0;
+}
 @media (min-width: 660px) {
-  .sidebar-profile .sidebar-profile-img {
-    width: 120%;
-    margin-left: -8%;
-  }
   .sidebar-profile .sidebar-details {
     background: #3e434b;
   }

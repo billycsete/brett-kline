@@ -11,6 +11,8 @@
 	@include selfclear;
 
 	.sidebar-details {
+		position: relative;
+		z-index: 10;
 		padding: 15px 0 15px 25px;
 		background: $grey;
 
@@ -24,11 +26,11 @@
 		}
 	}
 
+	.sidebar-profile-img {
+		margin: -4% 0 -3% 0;
+	}
+
 	@include media(medium) {
-		.sidebar-profile-img {
-			width: 120%;
-			margin-left: -8%;
-		}
 		.sidebar-details {
 			background: $light-grey;
 
