@@ -400,6 +400,7 @@ th {
 html, body {
   font-size: 16px;
   font-family: 'proxima-nova', 'Helvetica', 'sans-serif';
+  font-weight: 300;
   color: #515761;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -408,6 +409,10 @@ html, body {
   html, body {
     font-size: 18px;
   }
+}
+
+strong {
+  font-weight: 700;
 }
 
 h1 {
@@ -716,6 +721,8 @@ figure.fluid img {
 }
 
 .sidebar-nav {
+  position: relative;
+  z-index: 100;
   display: none;
 }
 .sidebar-nav ul {
@@ -724,30 +731,27 @@ figure.fluid img {
 .sidebar-nav li {
   border-bottom: 1px solid #494d55;
 }
-.sidebar-nav li a {
+.sidebar-nav .sidebar-link {
   -webkit-transition: background-color 0.3s ease-in-out;
           transition: background-color 0.3s ease-in-out;
+  display: block;
+  padding: 12px 25px;
 }
-.sidebar-nav li a i {
+.sidebar-nav .sidebar-link i {
   padding-left: 0;
   -webkit-transition: padding 0.3s cubic-bezier(0.77, 0, 0.175, 1);
           transition: padding 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.sidebar-nav a {
-  display: block;
-  padding: 12px 25px;
+.no-touch .sidebar-nav .sidebar-link:hover {
+  background-color: #494d55;
+}
+.no-touch .sidebar-nav .sidebar-link:hover i {
+  padding-left: 15px;
 }
 @media (min-width: 660px) {
   .sidebar-nav {
     display: block;
   }
-}
-
-.no-touch .sidebar-nav li a:hover {
-  background-color: #494d55;
-}
-.no-touch .sidebar-nav li a:hover i {
-  padding-left: 15px;
 }
 
 .intro p {
