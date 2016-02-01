@@ -53,10 +53,11 @@ h1 {
 }
 
 h2 {
-	font-weight: $light;
+	font-weight: $normal;
 	font-size: 1.2rem;
 	margin: 0 0 2rem 0;
 	display: inline-block;
+	letter-spacing: 0.5px;
 
 	span {
 		color: $white;
