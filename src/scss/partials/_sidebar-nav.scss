@@ -5,6 +5,8 @@
 // =================================================
 
 .sidebar-nav {
+	position: relative;
+	z-index: 100;
 	display: none;
 
 	ul {
@@ -13,37 +15,27 @@
 
 	li {
 		border-bottom: 1px solid $dark-grey;
-
-		a {
-			transition: background-color 0.3s ease-in-out;
-
-			i {
-				padding-left: 0;
-				transition: padding 0.3s $ease-in-out-quart;
-			}
-		}
 	}
 
-	a {
+	.sidebar-link {
+		transition: background-color 0.3s ease-in-out;
 		display: block;
 		padding: 12px 25px;
+
+		i {
+			padding-left: 0;
+			transition: padding 0.3s $ease-in-out-quart;
+		}
+
+		.no-touch &:hover {
+			background-color: $dark-grey;
+			i {
+				padding-left: 15px;
+			}
+		}
 	}
 
 	@include media(medium) {
 		display: block;
-	}
-}
-
-
-.no-touch {
-	.sidebar-nav {
-		li {
-			a:hover {
-				background-color: $dark-grey;
-				i {
-					padding-left: 15px;
-				}
-			}
-		}
 	}
 }
