@@ -775,3 +775,17 @@ figure.fluid img {
 .skills .bullets:first-of-type {
   margin-bottom: 0;
 }
+
+.news .news-article {
+  padding: 0.8rem 0;
+}
+.news .news-article-link {
+  text-decoration: none;
+  background-color: #2cafb7;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 0.4rem 0.6rem;
+}
+.no-touch .news .news-article-link:hover {
+  background-color: #259FA7;
+}

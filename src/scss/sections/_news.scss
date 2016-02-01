@@ -1,0 +1,25 @@
+// =================================================
+//
+// News Section
+//
+// =================================================
+
+.news {
+
+	.news-article {
+		padding: 0.8rem 0;
+	}
+
+	.news-article-link {
+		text-decoration: none;
+		background-color: $blue;
+		color: $white;
+		font-weight: $normal;
+		padding: 0.4rem 0.6rem;
+
+		.no-touch &:hover {
+			background-color: $blue-alt;
+		}
+	}
+
+}
