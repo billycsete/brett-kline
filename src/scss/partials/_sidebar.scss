@@ -5,12 +5,11 @@
 // =================================================
 
 .sidebar {
+	@include selfclear;
 	position: relative;
 	z-index: 100;
 	background-color: $grey;
 	color: $white;
-
-	@include selfclear;
 
 	a {
 		color: $white;

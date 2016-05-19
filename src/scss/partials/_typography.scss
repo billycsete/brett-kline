@@ -31,7 +31,7 @@ html, body {
 }
 
 strong {
-	font-weight: 700;
+	font-weight: $bold;
 }
 
 
@@ -123,10 +123,6 @@ ol, ul {
 		padding-top: 1rem;
 		margin-top: 1rem;
 	}
-}
-
-ul.list {
-
 }
 
 ul.bullets {
